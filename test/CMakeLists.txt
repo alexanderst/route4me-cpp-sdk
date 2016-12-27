@@ -10,6 +10,9 @@ TARGET_LINK_LIBRARIES(UpdateRoute route4me)
 ADD_EXECUTABLE(RouteDestinations RouteDestinations.cpp)
 TARGET_LINK_LIBRARIES(RouteDestinations route4me)
 
+ADD_EXECUTABLE(GetAllRoutes GetMultipleRoutes.cpp)
+TARGET_LINK_LIBRARIES(GetAllRoutes route4me)
+
 ADD_EXECUTABLE(AddressBook AddressBook.cpp)
 TARGET_LINK_LIBRARIES(AddressBook route4me)
 
@@ -28,11 +31,11 @@ TARGET_LINK_LIBRARIES(Activities route4me)
 ADD_EXECUTABLE(Zones AvoidanceZones.cpp)
 TARGET_LINK_LIBRARIES(Zones route4me)
 
+ADD_EXECUTABLE(Orders Orders.cpp)
+TARGET_LINK_LIBRARIES(Orders route4me)
+
 ADD_EXECUTABLE(Territory Territory.cpp)
 TARGET_LINK_LIBRARIES(Territory route4me)
-
-ADD_EXECUTABLE(GetAllRoutes GetMultipleRoutes.cpp)
-TARGET_LINK_LIBRARIES(GetAllRoutes route4me)
 
 ADD_EXECUTABLE(RouteStatus RouteStatus.cpp)
 TARGET_LINK_LIBRARIES(RouteStatus route4me)
